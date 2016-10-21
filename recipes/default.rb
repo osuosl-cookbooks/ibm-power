@@ -16,3 +16,30 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+case node['kernel']['machine']
+when 'ppc64', 'ppc64le'
+  case node['platform_family']
+  when 'rhel'
+    remote_file ::File.join(
+      Chef::Config[:file_cache_path],
+      node['ibm-power']['repo_package']
+    ) do
+      source node['ibm-power']['repo_url'] + '/' + \
+             node['ibm-power']['repo_package']
+      action :create_if_missing
+    end
+    rpm_package ::File.join(
+      Chef::Config[:file_cache_path],
+      node['ibm-power']['repo_package']
+    )
+    yum_repository 'ibm-power-tools' do
+      node['ibm-power']['ibm-power-tools'].each do |key, value|
+        send(key.to_sym, value)
+      end
+    end
+
+    %w(ppc64-diag powerpc-utils).each do |p|
+      package p
+    end
+  end
+end
