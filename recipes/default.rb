@@ -37,6 +37,7 @@ when 'ppc64', 'ppc64le'
         send(key.to_sym, value)
       end
     end
+    
 
     %w(ppc64-diag powerpc-utils).each do |p|
       package p
