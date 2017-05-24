@@ -46,7 +46,7 @@ when 'ppc64', 'ppc64le'
     when 'ppc64'
       apt_repository 'unstable' do
         uri 'http://debian.osuosl.org/debian'
-        components ['unstable', 'main']
+        components %w(main unstable)
       end
       %w(ppc64-diag).each do |p|
         package p
@@ -54,7 +54,7 @@ when 'ppc64', 'ppc64le'
     when 'ppc64le'
       apt_repository 'stretch' do
         uri 'http://debian.osuosl.org/debian'
-        components ['stretch', 'main']
+        components %w(main stretch)
       end
       %w(ppc64-diag).each do |p|
         package p
