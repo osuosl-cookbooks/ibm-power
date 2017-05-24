@@ -70,4 +70,5 @@ when 'ppc64', 'ppc64le'
     %w(ppc64-diag).each do |p|
       package p
     end
+  end
 end
