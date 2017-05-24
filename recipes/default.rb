@@ -37,8 +37,37 @@ when 'ppc64', 'ppc64le'
         send(key.to_sym, value)
       end
     end
-
     %w(ppc64-diag powerpc-utils).each do |p|
+      package p
+    end
+
+  when 'debian'
+    case node ['kernel']['machine']
+    when 'ppc64'
+      apt_repository 'unstable' do
+        uri 'http://debian.osuosl.org/debian'
+        components %w(main unstable)
+      end
+      %w(ppc64-diag).each do |p|
+        package p
+      end
+    when 'ppc64le'
+      apt_repository 'stretch' do
+        uri 'http://debian.osuosl.org/debian'
+        components %w(main stretch)
+      end
+      %w(ppc64-diag).each do |p|
+        package p
+      end
+    end
+
+  when 'opensuse'
+    %w(ppc64-diag).each do |p|
+      package p
+    end
+
+  when 'ubuntu'
+    %w(ppc64-diag).each do |p|
       package p
     end
   end
