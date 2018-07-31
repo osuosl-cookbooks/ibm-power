@@ -6,5 +6,5 @@ default['ibm-power']['ibm-power-tools'] = {
   'enabled' => true,
   'gpgcheck' => true,
   'gpgkey' => 'file:///opt/ibm/lop/gpg/RPM-GPG-KEY-ibm-power',
-  'baseurl' => 'http://public.dhe.ibm.com/software/server/POWER/Linux/yum/OSS/RHEL/$releasever/$basearch'
+  'baseurl' => 'http://public.dhe.ibm.com/software/server/POWER/Linux/yum/OSS/RHEL/$releasever/$basearch',
 }
