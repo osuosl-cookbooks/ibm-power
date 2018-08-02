@@ -5,11 +5,11 @@ ChefSpec::Coverage.start! { add_filter 'ibm-power' }
 
 CENTOS_7 = {
   platform: 'centos',
-  version: '7.2.1511'
+  version: '7.2.1511',
 }.freeze
 
 ALL_PLATFORMS = [
-  CENTOS_7
+  CENTOS_7,
 ].freeze
 
 RSpec.configure do |config|

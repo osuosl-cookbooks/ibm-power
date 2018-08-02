@@ -1,9 +1,6 @@
 ibm-power Cookbook
 ==================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbook installs IBM's PowerPC tools.
 
 Requirements
 ------------
