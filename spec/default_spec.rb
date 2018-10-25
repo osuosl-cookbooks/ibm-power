@@ -11,6 +11,9 @@ describe 'ibm-power::default' do
             end.converge(described_recipe)
           end
           it do
+            expect(chef_run).to create_ohai_plugin('ibm_power').with(source_file: 'plugins/ibm_power.rb')
+          end
+          it do
             expect(chef_run).to create_remote_file_if_missing(
               ::File.join(
                 Chef::Config[:file_cache_path],
@@ -51,6 +54,9 @@ describe 'ibm-power::default' do
       context 'x86_64' do
         cached(:chef_run) do
           ChefSpec::SoloRunner.new(p).converge(described_recipe)
+        end
+        it do
+          expect(chef_run).to create_ohai_plugin('ibm_power').with(source_file: 'plugins/ibm_power.rb')
         end
         it do
           expect(chef_run).to_not create_remote_file_if_missing(

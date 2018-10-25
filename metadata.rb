@@ -11,4 +11,5 @@ version          '2.0.0'
 
 supports         'centos', '~> 7.0'
 
+depends          'ohai'
 depends          'yum'

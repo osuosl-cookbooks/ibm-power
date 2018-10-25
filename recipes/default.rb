@@ -16,8 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ohai_plugin 'ibm_power' do
+  source_file 'plugins/ibm_power.rb'
+end
+
 case node['kernel']['machine']
 when 'ppc64', 'ppc64le'
+
   case node['platform_family']
   when 'rhel'
     remote_file ::File.join(
