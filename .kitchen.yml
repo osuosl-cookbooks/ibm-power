@@ -3,3 +3,4 @@ suites:
   - name: default
     run_list:
       - recipe[ibm-power::default]
+      - recipe[ibm-power-test]
