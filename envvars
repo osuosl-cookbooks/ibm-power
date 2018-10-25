@@ -1,0 +1,4 @@
+cookbook=ibm-power
+version=2.0.0
+envs=*
+pr_link=https://github.com/osuosl-cookbooks/ibm-power/pull/3
