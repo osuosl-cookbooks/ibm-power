@@ -3,4 +3,7 @@ suites:
   - name: default
     run_list:
       - recipe[ibm-power::default]
+  - name: ohai_plugin
+    run_list:
+      - recipe[ibm-power::ohai_plugin]
       - recipe[ibm-power-test]
