@@ -3,6 +3,10 @@ ibm-power CHANGELOG
 This file is used to list changes made in each version of the
 ibm-power cookbook.
 
+2.2.1 (2018-10-29)
+------------------
+- Install ohai plugin at compile time
+
 2.2.0 (2018-10-27)
 ------------------
 - Create a separate ohai_plugin recipe
