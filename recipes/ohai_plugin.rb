@@ -17,4 +17,5 @@
 # limitations under the License.
 ohai_plugin 'ibm_power' do
   source_file 'plugins/ibm_power.rb'
+  compile_time true
 end
