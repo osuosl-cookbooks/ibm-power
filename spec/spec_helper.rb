@@ -5,9 +5,10 @@ ChefSpec::Coverage.start! { add_filter 'ibm-power' }
 
 CENTOS_7 = {
   platform: 'centos',
-  version: '7.2.1511',
+  version: '7.4.1708',
 }.freeze
 
+# Is this line necessary? Seems to repeat line 9. 
 ALL_PLATFORMS = [
   CENTOS_7,
 ].freeze
