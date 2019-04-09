@@ -8,7 +8,7 @@ CENTOS_7 = {
   version: '7.4.1708',
 }.freeze
 
-# Is this line necessary? Seems to repeat line 9. 
+# Is this line necessary? Seems to repeat line 9.
 ALL_PLATFORMS = [
   CENTOS_7,
 ].freeze
