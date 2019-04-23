@@ -7,3 +7,5 @@ suites:
     run_list:
       - recipe[ibm-power::ohai_plugin]
       - recipe[ibm-power-test]
+verifier:
+  name: inspec
