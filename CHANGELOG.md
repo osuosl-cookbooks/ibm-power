@@ -3,6 +3,10 @@ ibm-power CHANGELOG
 This file is used to list changes made in each version of the
 ibm-power cookbook.
 
+2.3.0 (2020-01-15)
+------------------
+- Chef 14 post-migration fixes
+
 2.2.1 (2018-10-29)
 ------------------
 - Install ohai plugin at compile time
