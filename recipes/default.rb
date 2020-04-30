@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: ibm-power
+# Cookbook:: ibm-power
 # Recipe:: default
 #
-# Copyright 2016 Oregon State University
+# Copyright:: 2016 Oregon State University
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,7 @@
 case node['kernel']['machine']
 when 'ppc64', 'ppc64le'
 
-  case node['platform_family']
-  when 'rhel'
+  if platform_family?('rhel')
     remote_file ::File.join(
       Chef::Config[:file_cache_path],
       node['ibm-power']['repo_package']
