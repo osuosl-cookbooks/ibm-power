@@ -3,6 +3,10 @@ ibm-power CHANGELOG
 This file is used to list changes made in each version of the
 ibm-power cookbook.
 
+2.4.0 (2020-06-01)
+------------------
+- Chef 15 updates
+
 2.3.0 (2020-01-15)
 ------------------
 - Chef 14 post-migration fixes
