@@ -1,4 +1,6 @@
 ---
+provisioner:
+  deprecations_as_errors: true
 suites:
   - name: default
     run_list:
