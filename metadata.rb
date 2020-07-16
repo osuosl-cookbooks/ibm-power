@@ -9,5 +9,6 @@ description      'Installs/Configures ibm-power'
 version          '2.4.0'
 
 supports         'centos', '~> 7.0'
+supports         'centos', '~> 8.0'
 
 depends          'ohai'
