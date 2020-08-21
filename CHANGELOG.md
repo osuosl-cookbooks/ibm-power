@@ -3,6 +3,10 @@ ibm-power CHANGELOG
 This file is used to list changes made in each version of the
 ibm-power cookbook.
 
+2.4.2 (2020-08-21)
+------------------
+- Chef 16 Fixes
+
 2.4.1 (2020-07-28)
 ------------------
 - Centos 8 support
