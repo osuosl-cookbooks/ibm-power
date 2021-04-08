@@ -6,7 +6,7 @@ issues_url       'https://github.com/osuosl-cookbooks/ibm-power/issues'
 license          'Apache-2.0'
 chef_version     '>= 16.0'
 description      'Installs/Configures ibm-power'
-version          '2.4.2'
+version          '3.0.0'
 
 supports         'centos', '~> 7.0'
 supports         'centos', '~> 8.0'
