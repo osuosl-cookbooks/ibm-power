@@ -1,4 +1,4 @@
-plugin_directory = '/tmp/kitchen/ohai/plugins'
+plugin_directory = '/tmp/kitchen/ohai/cookbook_plugins'
 
 arch = os.arch
 
