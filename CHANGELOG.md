@@ -3,6 +3,10 @@ ibm-power CHANGELOG
 This file is used to list changes made in each version of the
 ibm-power cookbook.
 
+4.0.0 (2021-07-02)
+------------------
+- Remove dependency on ohai cookbook
+
 3.0.0 (2021-04-08)
 ------------------
 - Update Chef dependency to >= 16
