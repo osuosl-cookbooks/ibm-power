@@ -9,5 +9,4 @@ description      'Installs/Configures ibm-power'
 version          '4.0.0'
 
 supports         'centos', '~> 7.0'
-supports         'centos', '~> 8.0'
 supports         'centos_stream', '~> 8.0'
