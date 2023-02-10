@@ -3,6 +3,10 @@ ibm-power CHANGELOG
 This file is used to list changes made in each version of the
 ibm-power cookbook.
 
+4.0.1 (2023-02-10)
+------------------
+- Add AlmaLinux 8 Support
+
 4.0.0 (2021-07-02)
 ------------------
 - Remove dependency on ohai cookbook
